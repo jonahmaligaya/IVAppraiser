@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ivappraiser.css">
+        <title>Pokémon GO Advanced IV Appraiser</title>
+    </head>
+    <body onload="defaultstat()">
+        <form>
+            <div class="titlediv">
+                <p id="title" class="title">Welcome to the</p>
+                <img src="assets/pokemongologo.png" id="title" class="title" height="61px" width="100px">
+                <p id="title" class="title">advanced IV appraiser!</p>
+            </div>
+            <div class="calculatorinputdiv">
+                <p>Input your Pokémon's IVs here, I will tell you if that Pokémon is worth keeping based on its IVs!</p>
+                <label for="attackiv" id="attackiv">Attack</label>
+                <label for="defenseiv" id="defenseiv">Defense</label>
+                <label for="hpiv" id="hpiv">HP</label><br>
+                <select id="attackiv" style="width: 295px" onchange="changeattack(this)">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <select id="defenseiv" style="width: 295px" onchange="changedefense(this)">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <select id="hpiv" style="width: 295px" onchange="changehp(this)">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <button type="button" id="calculator" onclick="calculation();">Calculate!</button>
+            </div>
+            <div class="text">
+                <p id="percentage"></p>
+                <p id="stars"></p>
+                <p id="use"></p>
+                <p id="isitworthkeeping"></p>
+            </div>
+        </form>
+    </body>
+    <script src="ivappraiser.js"></script>
+</html>
